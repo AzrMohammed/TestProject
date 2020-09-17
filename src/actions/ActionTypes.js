@@ -1,0 +1,4 @@
+export const PROCEED_LOGIN = "PROCEED_LOGIN"
+export const LOGIN_SUCCESSFUL = "LOGIN_SUCCESSFUL"
+export const LOGIN_FAILURE = "LOGIN_FAILURE"
+export const USER_LIST = "USER_LIST"
