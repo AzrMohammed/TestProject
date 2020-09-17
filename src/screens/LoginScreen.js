@@ -29,9 +29,9 @@ class LoginScreen extends Component {
                     <ActivityIndicator />
                     :
                     <View style={styles.childContainer}>
-                        {/* secureTextEntry={true} */}
+
                         <TextInput onChangeText={(username) => this.setState({ username })} style={styles.input} placeholder="Username"></TextInput>
-                        <TextInput onChangeText={(password) => this.setState({ password })} style={styles.input} placeholder="Password"></TextInput>
+                        <TextInput onChangeText={(password) => this.setState({ password })} style={styles.input} placeholder="Password" secureTextEntry={true} ></TextInput>
                          { this.props.errorMessage ?
                         <Text style={{ fontSize: 12, color:'red', textAlign: 'center' }}>{this.props.errorMessage}</Text>
                         : <View></View>}
